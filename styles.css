@@ -1,0 +1,39 @@
+/* Estilos para el cuerpo de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta el cuerpo para ocupar el 100% del alto de la pantalla */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+    background: linear-gradient(45deg, #ff4e50, #f9d423, #0037ff, #05ff01, #eef1f5); /* Degradado con colores navideños */
+    animation: gradientAnimation 10s ease infinite; /* Animación para el degradado */
+}
+
+/* Estilos para los elementos de texto */
+h1, p {
+    text-align: center;
+    color: #fff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra del texto para resaltar */
+}
+
+/* Animación para el degradado */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilos para la imagen */
+img {
+    display: block;
+    margin-top: 20px; /* Espacio superior para separar la imagen del texto */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para adaptarse al contenedor */
+}
